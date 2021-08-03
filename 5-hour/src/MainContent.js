@@ -1,3 +1,5 @@
+import TodoItem from "./TodoItem";
+
 function MainContent() {
 
     let firstName = "Bob";
@@ -6,15 +8,10 @@ function MainContent() {
     return(
         <div>
             <h2>My main content section, is brought to you by {` ${firstName} ${lasteName} `}  </h2>
-            <input type="checkbox" />
-            <p>Placeholder Text</p>
-
-            <input type="checkbox" />
-            <p>Placeholder Text</p>
-
-            <input type="checkbox" />
-            <p>Placeholder Text</p>
-
+            {/* {Now can add multiple instances of todoItem} */}
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
         </div>
     );
 }

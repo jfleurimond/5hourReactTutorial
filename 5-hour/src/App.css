@@ -2,7 +2,10 @@
   color: blue;
 }
 
-
+.checkbox {
+  padding: 40px;
+  border: 1px solid black;
+}
 
 /* .App {
   text-align: center;
