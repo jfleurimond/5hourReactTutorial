@@ -7,6 +7,13 @@
   border: 1px solid black;
 }
 
+.contact-card {
+  padding: 40px;
+  border: 2px solid green;
+  margin: 10px;
+  width: 300px;
+}
+
 /* .App {
   text-align: center;
 }

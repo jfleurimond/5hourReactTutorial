@@ -1,4 +1,5 @@
 import TodoItem from "./TodoItem";
+import ContactCard from "./contactCard";
 
 function MainContent() {
 
@@ -12,6 +13,10 @@ function MainContent() {
             <TodoItem />
             <TodoItem />
             <TodoItem />
+            {/* Below we are going to use prop to pass data 
+            we can use whatever name we want for the info*/}
+            < ContactCard name="Louise Belcher" phone="333-222-1212" email="thaahha@gmail.com" />
+
         </div>
     );
 }
