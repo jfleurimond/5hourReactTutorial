@@ -1,8 +1,21 @@
 import TodoItem from "./TodoItem";
 import ContactCard from "./contactCard";
 import ConditionalLogic from "./conditional";
+import idData from "./datatest";
 
 function MainContent() {
+
+    // below we are going to take in an array and use the map function with an arrow function
+    // to list multiple components
+    const contacts = idData.map((info) => {
+        return (
+            <ConditionalLogic ID = {info.id} name = {info.name} /> );
+    
+        }       
+         
+    );
+    
+
 
     let firstName = "Bob";
     let lasteName = "Burgers"; 
@@ -33,6 +46,11 @@ function MainContent() {
             /> 
 
             <ConditionalLogic /> 
+
+            {/* Below we add the array of components and it will display as expected */}
+            {contacts}
+            
+
 
 
         </div>
