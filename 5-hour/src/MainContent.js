@@ -1,5 +1,6 @@
 import TodoItem from "./TodoItem";
 import ContactCard from "./contactCard";
+import ConditionalLogic from "./conditional";
 
 function MainContent() {
 
@@ -23,12 +24,16 @@ function MainContent() {
             email="thaahha@gmail.com"
             /> */}
 
+            <br />
 
             {/* Passing a contact object as a prop, please make note to use : instead of = signs */}
             {/* This is similar to passing a json object */}
             < ContactCard 
             contact={{ name:"Louise Belcher", phone:"333-222-1212", email:"thaahha@gmail.com" }}
             /> 
+
+            <ConditionalLogic /> 
+
 
         </div>
     );
